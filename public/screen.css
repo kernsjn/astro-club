@@ -10,3 +10,194 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/.primary-text-color {
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-purple {
+  background-color: rgb(81, 51, 166);
+}
+
+.sdg-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-stretch: 100%;
+  line-height: 25px;
+  padding: 8px;
+}
+
+.sdg-title a {
+  text-decoration: none;
+}
+.light-text-color {
+  color: rgb(254, 254, 254);
+}
+
+nav.side-menu a {
+  padding: 1.25rem;
+}
+.side-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.daily-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8.5rem;
+}
+
+.image-text {
+  font-size: 2rem;
+  color: white;
+}
+.credit {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+}
+
+.accent-color {
+  background-color: rgb(254, 192, 47);
+}
+
+.launches {
+  display: flex;
+  flex-direction: row;
+}
+
+.upcoming-launches {
+  margin: 0;
+  padding: 1rem 0 1rem 0.5rem;
+  background-color: rgb(254, 192, 47);
+}
+
+.launches {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.launch-info {
+  margin: 1rem 3rem;
+  padding-bottom: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  flex-basis: 80%;
+  background-color: rgb(237, 237, 237);
+}
+
+.mission-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.light-violet {
+  background-color: rgb(209, 197, 232);
+}
+
+footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0rem 8rem 0rem;
+  background-color: rgb(254, 192, 47);
+  font-size: 2rem;
+}
+
+.arrow:active {
+  background-color: rgb(81, 51, 166);
+}
+
+.launch-card {
+  margin: 1rem 3rem;
+  padding: 0 1rem 0.5rem 1rem;
+  background-color: #ededed;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.launch-card h3 {
+  text-align: center;
+}
+.launch-card svg {
+  margin-right: 0.5rem;
+}
+.launch-card main {
+  padding-bottom: 0.75rem;
+  border-bottom: darkgray 1px solid;
+}
+.launch-card .location,
+.launch-card .countdown {
+  padding-top: 0.75rem;
+  border-bottom: darkgray 1px solid;
+  padding-bottom: 0.75rem;
+}
+.launch-card .location {
+  border: none;
+}
+.mission-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+p {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and(min-width:500px) {
+  .mission-statement section {
+    width: 75%;
+  }
+  .arrow {
+    width: 10rem;
+    margin: 4rem 0rem 4rem 0rem;
+  }
+}
+@media only screen and(min-width:1000px) {
+  .mission-statement section {
+    width: 50%;
+  }
+  .arrow {
+    width: 10rem;
+    margin: 4rem 0rem 4rem 0rem;
+  }
+}
