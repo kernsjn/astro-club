@@ -4,82 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Astro Club</title>
-    <script src="https://kit.fontawesome.com/d7373701d1.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
   </head>
-  <body class="primary-text-color">
-    <nav class="dark-purple menu">
-      <section class="sdg-title">
-        <header>
-          <a href="#" class="light-text-color">SDG Astro Lounge</a>
-        </header>
-      </section>
-      <nav class="side-menu">
-        <a href="#" class="light-text-color">About</a>
-        <a href="#" class="light-text-color">Contact Us</a>
-      </nav>
-    </nav>
-    <main class="main-section">
-      <section class="daily-picture" >
-          <h1 class="image-text">Explore Your Universe</h1>
-      </section>
-      <section class="credit">
-        copyright: <span class="copyright"></span> | title:
-        <span class="title"></span>
-      </section>
-      <h2 class="upcoming-launches">Upcoming SpaceX Launches</h2>
+  <body>
+    <section class="header-area">
+      <h2 class="header-title">SDG Astro Lounge</h2>
+      <div class="menu-area">
+        <a href="#" class="link-text">About</a>
+        <a href="#" class="link-text">Contact Us</a>
+      </div>
+    </section>
+    <section class="image-area">
+      <h1>Explore your universe.</h1>
+    </section>
+    <section class="credit">
+      copyright:&nbsp;
+      <span class="image-copyright"></span>
+      &nbsp;| title:&nbsp;
+      <span class="image-title"></span>
+    </section>
+    <section class="upcoming-launches-area">
+      <header class="launch-area-header">Upcoming SpaceX Launches</header>
       <section class="launches">
-        <button class="left arrow primary-text-color">&nbsp;<i class="fas fa-angle-left"></i></button>
-        <section class="launch-card">
-          <section class="-info-launch-card">
-            <section class="launch-title">
-              <h3>
-                <i></i><span class="title-of-launch"></span>
-              </h3>
+        <button class="left-arrow"><i class="fas fa-angle-left"></i></button>
+        <div class="launches-api-area">
+          <h3>
+            <i class="fas fa-space-shuttle fa-w-20"></i>&nbsp;<span
+              class="mission-name"
+            ></span>
+          </h3>
+          <main>
+            <section class="launch-info-area">
+              <i class="fas fa-info-circle">&nbsp;</i
+              ><span class="launch-info"></span>
             </section>
-            <section class="launch-description">
-               <p>
-                 <i class="fas fa-info-circle"><span class="describe-launch"></span></i>
-               </p>
+            <section class="countdown-area">
+              <i class="fas fa-clock"></i>&nbsp;<span class="countdown"></span>
             </section>
-            <section class="launch-countdown">
-              <p>
-                <i></i>
-                <span></span>
-              </p>
+            <section class="location-area">
+              <i class="fas fa-map-marked-alt"></i>&nbsp;<span
+                class="location"
+              ></span>
             </section>
-            <section class="launch-location">
-              <p>
-                <i></i><span></span>
-              </p>
-            </section>
-          </section>
-        </section>
-        <button class="right arrow primary-text-color">&nbsp;<i class="fas fa-angle-right"></i></button>
+          </main>
+        </div>
+        <button class="right-arrow"><i class="fas fa-angle-right"></i></button>
       </section>
-      <section class="mission-statement light-violet">
-        <h2>Our Mission Statement.</h2>
-        <p>
-          Ancient alien extraterrestrial origin sanskrit Annunaki, helicopter
-          heiroglyph aircraft pre-colonial aerodynamics, ancient alien theorists
-          weightless sanskrit. Star people Easter island inter-dimensional
-          crystal skull anti-gravity vimana, the answer is a resounding YES...
-          Mainstream archaelogy golden disk targeted mutation, ancient alien
-          theorists otherworldly visitors worm hole space brothers SETI space
-          time.
-        </p>
-      </section>
-    </main>
-    <footer class="dark-purple light-text-color">
-      <span>made with 
-        <span role="img" aria-label="heart">💛</span>
-         at 
-        <a class="light-text-color" href="https://suncoast.io">SDG</a>
-
-        </span>
-      </span>
+    </section>
+    <section class="mission-statement">
+      <h2>Our Mission Statement.</h2>
+      <p>
+        Ancient alien extraterrestrial origin sanskrit Annunaki, helicopter
+        heiroglyph aircraft pre-colonial aerodynamics, ancient alien theorists
+        weightless sanskrit. Star people Easter island inter-dimensional crystal
+        skull anti-gravity vimana, the answer is a resounding YES... Mainstream
+        archaelogy golden disk targeted mutation, ancient alien theorists
+        otherworldly visitors worm hole space brothers SETI space time.
+      </p>
+    </section>
+    <footer class="footer-area">
+      <span>
+        made with 💛 at
+        <a class="footer-link-text" href="https://suncoast.io">SDG</a></span
+      >
     </footer>
+    <script src="/main.js" charset="utf-8"></script>
+    <script
+      src="https://kit.fontawesome.com/97a904bf58.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>

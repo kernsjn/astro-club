@@ -11,176 +11,154 @@ body {
   min-height: 100%;
 }
 
-.main-section {
-  display: flex;
-  flex-direction: column;
-}
-nav {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-/.primary-text-color {
-  color: black;
+.link-text {
+  color: #fff;
+  padding: 1rem;
 }
 
-.menu {
+.link-text:hover {
+  background-color: #ffc107;
+  color: #212121;
+}
+
+.footer-link-text {
+  color: #ccc;
+}
+
+.header-area {
   display: flex;
   justify-content: space-between;
+  background-color: #673ab7;
 }
 
-.dark-purple {
-  background-color: rgb(81, 51, 166);
-}
-
-.sdg-title {
-  width: 100%;
+.header-title {
   display: flex;
   align-items: center;
-  font-size: 28px;
-  font-stretch: 100%;
-  line-height: 25px;
-  padding: 8px;
+  background-color: #673ab7;
+  color: #fff;
+  flex-basis: 50%;
+  padding: 0rem 0rem 0rem 0.5rem;
+  font-weight: normal;
 }
 
-.sdg-title a {
-  text-decoration: none;
-}
-.light-text-color {
-  color: rgb(254, 254, 254);
-}
-
-nav.side-menu a {
-  padding: 1.25rem;
-}
-.side-menu {
+.menu-area {
   display: flex;
+  align-items: center;
+  flex-basis: 50%;
   justify-content: flex-end;
+  background-color: #673ab7;
+  color: #fff;
+  padding: 0rem 1rem 0rem 0;
 }
 
-.daily-picture {
+.image-area {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 20rem;
+  font-size: 1.5rem;
   padding: 8.5rem;
 }
 
-.image-text {
-  font-size: 2rem;
-  color: white;
-}
 .credit {
-  width: 100%;
-  text-align: center;
-  font-size: 0.8em;
-  color: black;
-}
-
-.accent-color {
-  background-color: rgb(254, 192, 47);
-}
-
-.launches {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  font-size: 13px;
 }
 
-.upcoming-launches {
-  margin: 0;
+.launch-area-header {
+  display: flex;
+  background-color: #ffc107;
   padding: 1rem 0 1rem 0.5rem;
-  background-color: rgb(254, 192, 47);
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .launches {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.launch-info {
-  margin: 1rem 3rem;
-  padding-bottom: 3rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border-radius: 0.5rem;
-  flex-basis: 80%;
-  background-color: rgb(237, 237, 237);
-}
-
-.mission-statement {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
-.light-violet {
-  background-color: rgb(209, 197, 232);
-}
-
-footer {
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow {
-  width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8rem 0rem 8rem 0rem;
-  background-color: rgb(254, 192, 47);
-  font-size: 2rem;
-}
-
-.arrow:active {
-  background-color: rgb(81, 51, 166);
-}
-
-.launch-card {
-  margin: 1rem 3rem;
-  padding: 0 1rem 0.5rem 1rem;
+.launches-api-area {
   background-color: #ededed;
+  padding: 0 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
   width: 100%;
+  margin: 1rem 3rem;
 }
-.launch-card h3 {
+
+.launches-api-area > h3 {
   text-align: center;
 }
-.launch-card svg {
-  margin-right: 0.5rem;
-}
-.launch-card main {
+
+.launch-info-area {
   padding-bottom: 0.75rem;
   border-bottom: darkgray 1px solid;
 }
-.launch-card .location,
-.launch-card .countdown {
+
+.countdown-area {
   padding-top: 0.75rem;
   border-bottom: darkgray 1px solid;
   padding-bottom: 0.75rem;
 }
-.launch-card .location {
-  border: none;
+
+.location-area {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
-.mission-statement {
+
+.left-arrow {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  border-radius: 0 1rem 1rem 0rem;
+  font-size: 2rem;
+  background-color: #ffc107;
+  margin: 8rem 0 8rem 0rem;
+  width: 5rem;
 }
-p {
+
+.left-arrow:active {
+  background-color: #673ab7;
+}
+
+.right-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 0rem 0rem 1rem;
+  font-size: 2rem;
+  background-color: #ffc107;
+  margin: 8rem 0 8rem 0rem;
+  width: 5rem;
+}
+
+.right-arrow:active {
+  background-color: #673ab7;
+}
+
+.mission-statement {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #d1c4e9;
   text-align: center;
-  margin-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+.footer-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #673ab7;
+  color: #ccc;
+  height: 5rem;
 }
 
 @media only screen and(min-width:500px) {
